@@ -1,0 +1,128 @@
+/* Estilos generales para el cuerpo del sitio */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #222222; /* Fondo oscuro (negro) */
+    color: #F8F8F8; /* Texto claro (casi blanco) */
+}
+
+/* Estilos para el encabezado de la página */
+header {
+    background: #FFD700; /* Amarillo vibrante */
+    color: #222222; /* Texto oscuro sobre amarillo */
+    padding: 2.5rem 0; /* Encabezado más alto */
+    text-align: center;
+    border-bottom: 8px solid #FFC107; /* Borde más grueso y amarillo */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); /* Sombra para profundidad */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em; /* Título aún más grande */
+    letter-spacing: 3px; /* Más espaciado entre letras */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 40px; /* Más espacio alrededor del contenido */
+    max-width: 1100px; /* Contenido mucho más ancho */
+    margin: 40px auto; /* Centrado con más margen vertical */
+}
+
+/* Estilos para las secciones de contenido (tarjetas) */
+.profile-info, .favorites-section, .photos-section {
+    background: #333333; /* Fondo oscuro para las tarjetas */
+    color: #F8F8F8; /* Texto claro dentro de las tarjetas */
+    padding: 40px; /* Más espacio interno */
+    margin-bottom: 40px; /* Más espacio entre secciones */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+.profile-info h2, .favorites-section h2, .photos-section h2 {
+    color: #FFD700; /* Títulos de sección en amarillo */
+    font-size: 2.5em; /* Títulos de sección aún más grandes */
+    margin-bottom: 25px;
+    border-bottom: 3px solid #555555; /* Separador más grueso */
+    padding-bottom: 12px;
+}
+
+/* Estilos para la foto de perfil en la página principal */
+.profile-photo {
+    width: 300px; /* Foto de perfil mucho más grande */
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 30px; /* Más margen debajo */
+    border: 6px solid #FFD700; /* Borde amarillo más grueso */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Resplandor amarillo más fuerte */
+}
+
+.profile-info p {
+    font-size: 1.3em; /* Texto de información más grande */
+    margin-bottom: 12px;
+}
+.profile-info strong {
+    color: #FFD700; /* Etiquetas en amarillo */
+}
+
+/* Estilos para las listas de favoritos, incluyendo las imágenes */
+.favorite-item {
+    display: flex; /* Para alinear texto e imágenes en la misma línea */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 20px; /* Más espacio entre cada elemento favorito */
+    font-size: 1.4em; /* Texto de favoritos más grande */
+}
+
+.favorite-item strong {
+    color: #FFD700; /* Etiquetas en amarillo */
+    margin-right: 15px;
+}
+
+.favorite-item img {
+    width: 150px; /* Imágenes de favoritos aún más grandes */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes más redondeados */
+    margin-left: 20px; /* Más espacio entre imágenes */
+    border: 3px solid #FFD700; /* Borde amarillo más grueso */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para la galería de fotos de familia y amigos */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Imágenes de galería aún más grandes y que se ajusten bien */
+    gap: 25px; /* Más espacio entre imágenes */
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 250px; /* Altura uniforme más grande para las imágenes de la galería */
+    object-fit: cover;
+    border-radius: 12px; /* Bordes redondeados para las imágenes */
+    border: 4px solid #FFD700; /* Borde amarillo más grueso */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4); /* Sombra más fuerte */
+    transition: transform 0.2s ease-in-out; /* Transición suave al pasar el ratón */
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.04); /* Efecto de zoom ligeramente mayor al pasar el ratón */
+    border-color: #F0B800; /* Borde ligeramente más oscuro al pasar el ratón */
+}
+
+/* Estilos para los enlaces de navegación */
+a {
+    color: #FFD700; /* Enlaces en amarillo */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Enlaces más grandes */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F0B800; /* Amarillo más oscuro al pasar el ratón */
+}
